@@ -1,0 +1,32 @@
+.btn {
+    padding: 10px;
+    border-radius: getBorderRadius(30px);
+}
+
+// @function getBorderRadius($border-radius) {
+//      @if ($border-radius < 5) {
+//          @return #{$border-radius+6}px;
+//      }
+
+//      @else if($border-radius < 8 and $border-radius > 5) {
+//          @return #{$border-radius+1}px;
+//      }
+
+//      @else {
+//          @return #{$border-radius - 5}px;
+//      }
+//  }
+
+@function getBorderRadius($border-radius) {
+    @if ($border-radius < 5) {
+        @return #{$border-radius + 6}px;
+    }
+
+    @else if($border-radius < 8 and $border-radius > 5) {
+        @return #{$border-radius + 1}px;
+    }
+
+    @else {
+        @return #{$border-radius - 5}px;
+    }
+}
