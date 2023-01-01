@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <form action="" class="border border-1 mt-5 p-3">
+        <form action="" class="border border-1 mt-5 p-3 needs-validation">
           <div class="row">
             <div class="col">
               <label for="inputEmail1">Email: </label>
@@ -64,29 +64,45 @@
               </div>
             </div>
             <div class="col">
-                <label for="selectCity">City: </label>
-                <select class="form-control" id="selectCity">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+              <label for="selectCity">City: </label>
+              <select class="form-control" id="selectCity">
+                <option selected value="">cities...</option>
+                <option>Tehran</option>
+                <option>Yazd</option>
+                <option>Isfahan</option>
+                <option>Alborz</option>
+              </select>
             </div>
           </div>
-          <div class="row  mt-3">
+          <div class="row mt-3">
             <div class="col">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="rulesCheck">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="rulesCheck"
+                />
                 <label class="form-check-label" for="rulesCheck">
                   I read terms and conditions
                 </label>
               </div>
             </div>
           </div>
-          <div class="row  mt-3">
+          <div class="row mt-3">
+            <div class="col">
+              <label for="textarea1">Messages: </label>
+              <textarea class="form-control" id="textarea1" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
             <div class="col-6 offset-3">
-              <input type="submit" value="submit" class="form-control">
+              <input
+                type="submit"
+                value="submit"
+                class="form-control"
+                id="submitButton"
+              />
             </div>
           </div>
         </form>
@@ -98,5 +114,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
